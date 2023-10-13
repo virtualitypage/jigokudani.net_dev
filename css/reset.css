@@ -23,13 +23,17 @@ figure, figcaption, footer, header {
 
 /* ①②専用 */
 dl, dt, dd, .margin {
-  margin-bottom: -75px;
+  margin-bottom: -80px;
   margin-top: -5px;
+}
+
+.a0 {
+  margin-top: -130px;
 }
 
 /* ③④専用 */
 .a1, .margin2 {
-  margin-bottom: -75px;
+  margin-bottom: -80px;
   margin-top: -100px;
 }
 
@@ -38,12 +42,13 @@ dl, dt, dd, .margin {
   margin-bottom: -75px;
   margin-top: -20px;
 }
+
 .a3 {
-  margin-top: -15px;
+  margin-top: -20px;
 }
 
 .a4 {
-  margin-top: -15px;
+  margin-top: -90px;
 }
 
 .a5 {
@@ -65,23 +70,28 @@ dl, dt, dd, .margin {
 
 @media screen and (min-width: 769px) {
   dl, dt, dd, .margin {
-    margin-bottom: -75px;
+    margin-bottom: -85px;
     margin-top: -5px;
   }
-  .a1, .margin2 {
-    margin-top: -2.5px;
+  .a0 {
+    margin-top: -90px;
   }
+  .a1, .margin2 {
+    margin-bottom: -85px;
+    margin-top: -47.5px;
+  }
+
   .a2 {
-    margin-top: -190px;
+    margin-top: -48px;
   }
   .a3 {
-    margin-top: -3px;
+    margin-top: -190px;
   }
   .a4 {
-    margin-top: -250px;
+    margin-top: -190px;
   }
   .a5 {
-    margin-top: -250px;
+    margin-top: -190px;
   }
   .a6 {
     margin-top: -210px;
