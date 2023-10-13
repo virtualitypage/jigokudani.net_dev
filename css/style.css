@@ -39,7 +39,7 @@ header
 
 .site-header {
   width: 100%;
-  position: absolute;
+  position: relative;
   background-color: #000000;
   display: block;
   z-index: 1;
@@ -183,7 +183,7 @@ infoArea
 ========================================================= */
 
 .infoArea {
-  margin: 100px auto -10px;
+  margin: 50px auto -10px;
   width: 100%;
   /* padding: 0 0 20vw; */
   position: relative;
@@ -230,7 +230,7 @@ infoArea
 
 @media screen and (min-width: 769px) {
   .infoArea {
-    margin: 70px auto -30px;
+    margin: -25px auto -30px;
     padding: 55px 0 5px;
   }
   .infoArea:before {
@@ -328,7 +328,7 @@ information bottom
   font-weight: bold;
   font-size: 13px;
   display: inline-block;
-  padding: 0.5em 4em;
+  padding: 0.5em 1em;
   text-decoration: none;
   background-color: #00bde3;
   box-shadow: 0px 0px 0px 2px #0a0a0a;
@@ -362,7 +362,7 @@ information bottom
   font-weight: bold;
   font-size: 13px;
   display: inline-block;
-  padding: 0.5em 4em;
+  padding: 0.5em 1em;
   text-decoration: none;
   background-color: #673ab7;
   box-shadow: 0px 0px 0px 2px #0a0a0a;
@@ -503,6 +503,7 @@ storeList
 .storeList li dl dt {
   color: #fff;
   font-size: 20px;
+  font-weight: bold;
   line-height: 1.6;
   margin-bottom: 3px;
   text-align: center;
