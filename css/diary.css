@@ -167,7 +167,7 @@ main {
   /*IE*/
 }
 .main-contents {
-  padding-top: 50px;
+  padding-top: 60px;
   padding-left: 5%;
   padding-right: 5%;
   overflow: hidden;
@@ -179,7 +179,7 @@ main {
 }
 @media screen and (min-width: 769px) {
   .main-contents {
-    padding-top: 100px;
+    padding-top: 190px;
     padding-left: 3%;
     padding-right: 3%;
     overflow: hidden;
@@ -205,8 +205,8 @@ detailArea
   .detailArea {
     width: 50%;
     margin: -40px auto 20px;
-    padding: 70px 0 5px;
-    text-align: center;
+    /* padding: 70px 0 5px;
+    text-align: center; */
     background-color: #000;
   }
 }
