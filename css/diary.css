@@ -10,12 +10,13 @@ html {
 }
 body {
   margin: 0;
+  padding: 0;
+  background-color: #a600ff;
+  background: repeating-linear-gradient( to top,rgba(255,255,255,0.03) 0px 2px,transparent 2px 4px ),linear-gradient(to bottom,#200933 75%,#3d0b43);
+  /* background: repeating-linear-gradient( to top,rgba(255,255,255,0.03) 0px 2px,transparent 2px 4px ),linear-gradient(to bottom,#ff8200 75%,#000000); */
+  /* background-size: 20px 2px; */
+  background-size: 20px 5px;
   font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, Meiryo, メイリオ, "Noto Sans JP", sans-serif;
-  background-color: #000;
-  color: rgb(0, 0, 0);
-  /* font-family: system-ui, sans-serif;
-  font-size: 1rem; */
-  -webkit-overflow-scrolling: touch;
 }
 img {
   width: 100%;
@@ -198,6 +199,7 @@ detailArea
   width: 70%;
   margin: 5% auto 10px;
   text-align: center;
+  background-color: #000;
 }
 @media screen and (min-width: 769px) {
   .detailArea {
@@ -205,6 +207,7 @@ detailArea
     margin: -40px auto 20px;
     padding: 70px 0 5px;
     text-align: center;
+    background-color: #000;
   }
 }
 
@@ -290,6 +293,7 @@ infoArea
   font-weight: bold;
   font-size: 15px;
   height: 30%;
+  background-color: #000;
 }
 
 @media screen and (min-width: 769px) {
@@ -310,6 +314,7 @@ infoArea
     font-weight: bold;
     font-size: 15px;
     height: 30%;
+    background-color: #000;
   }
 }
 
