@@ -546,7 +546,6 @@ code[class] {
   text-shadow: 0 0 20px darkorange,0 0 35px rgb(255, 168, 61),0 0 5px rgb(255, 168, 61),0 0 50px darkorange;
 }
 
-
 @media screen and (min-width: 769px) {
   .storeList li {
     margin-bottom: 25px;
