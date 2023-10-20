@@ -192,10 +192,29 @@ img {
 a {
   text-decoration: none;
 }
+
 p {
   font-weight: bold;
   font-size: 20px;
   color: #fff;
+  margin-bottom: 10px;
+}
+
+.storeName {
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 60px;
+  text-decoration: underline;
+}
+@media screen and (min-width: 769px) {
+  .storeName {
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
 }
 
 /* =========================================================
@@ -265,7 +284,7 @@ info
 
 @media (min-width: 769px) {
   .info-title {
-    padding: 5px 0 20px;
+    padding: 5px 0 0;
   }
 }
 
