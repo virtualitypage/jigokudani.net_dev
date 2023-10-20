@@ -290,7 +290,7 @@ info
 
 .info-title .ja {
   margin: 13px auto 0;
-  color: #6A6B6F;
+  /* color: #6A6B6F; */
   font-size: 13px;
   line-height: 1;
 }
@@ -334,7 +334,7 @@ info
 
 .menu-title .ja {
   margin: 13px auto 0;
-  color: #6A6B6F;
+  /* color: #6A6B6F; */
   font-size: 13px;
   line-height: 1;
 }
