@@ -94,7 +94,7 @@ span {
     position: absolute;
     top: 70%;
     right: 0;
-    left: 0;
+    left: -40px;
     z-index: -1;
     background-color: #000000;
     visibility: hidden;
