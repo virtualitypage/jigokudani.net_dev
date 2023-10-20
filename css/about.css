@@ -79,7 +79,7 @@ header
 
 span2 {
   font-size: 20px;
-  color: #ffffff;
+  color: #fff;
   font-weight: bold;
 }
 
@@ -201,17 +201,19 @@ p {
 }
 
 .storeName {
+  /* color: #fff; */ /* 通常 */
+  color: orange; /* ハロウィン仕様 */
   font-weight: bold;
   font-size: 20px;
-  color: #fff;
   margin-bottom: 60px;
   text-decoration: underline;
 }
 @media screen and (min-width: 769px) {
   .storeName {
+    /* color: #fff; */ /* 通常 */
+    color: orange; /* ハロウィン仕様 */
     font-weight: bold;
     font-size: 20px;
-    color: #fff;
     margin-bottom: 30px;
     text-decoration: underline;
   }
@@ -365,11 +367,16 @@ info
   }
 }
 
+/* 通常 */
+/* code[class] {
+  color: white;
+  text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white;
+} */
+
+/* ハロウィン仕様 */
 code[class] {
-  /* color: white; */
-  color: darkorange;
-  /* text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white; */
-  text-shadow: 0 0 20px darkorange,0 0 35px rgb(255, 168, 61),0 0 5px rgb(255, 168, 61),0 0 50px darkorange;
+  color: rgb(255, 123, 0);
+  text-shadow: 0 0 20px rgb(255, 123, 0),0 0 35px rgb(255, 123, 0),0 0 5px rgb(255, 123, 0),0 0 50px darkorange;
 }
 
 /* =========================================================

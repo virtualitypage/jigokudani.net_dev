@@ -503,7 +503,8 @@ storeList
   padding: 10px 7px 0;
 }
 .storeList li dl dt {
-  color: rgb(251, 194, 124); /* 時期毎に変更 */
+  /* color: #fff; */ /* 通常 */
+  color: orange; /* ハロウィン仕様 */
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 3px;
@@ -533,17 +534,24 @@ storeList
   padding: 5px 10px;
 }
 
-code-p[class] {
-  /* color: white; */
-  color: darkorange;
-  /* text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white; */
-  text-shadow: 0 0 20px darkorange,0 0 35px rgb(255, 168, 61),0 0 5px rgb(255, 168, 61),0 0 50px darkorange;
+/* 通常 */
+/* code-p[class] {
+  color: white;
+  text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white;
 }
 code[class] {
-  /* color: white; */
-  color: darkorange;
-  /* text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white; */
-  text-shadow: 0 0 20px darkorange,0 0 35px rgb(255, 168, 61),0 0 5px rgb(255, 168, 61),0 0 50px darkorange;
+  color: white;
+  text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white;
+} */
+
+/* ハロウィン仕様 */
+code-p[class] {
+  color: rgb(255, 123, 0);
+  text-shadow: 0 0 20px rgb(255, 123, 0),0 0 35px rgb(255, 123, 0),0 0 5px rgb(255, 123, 0),0 0 50px darkorange;
+}
+code[class] {
+  color: rgb(255, 123, 0);
+  text-shadow: 0 0 20px rgb(255, 123, 0),0 0 35px rgb(255, 123, 0),0 0 5px rgb(255, 123, 0),0 0 50px darkorange;
 }
 
 @media screen and (min-width: 769px) {
