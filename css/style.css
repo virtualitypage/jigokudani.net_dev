@@ -8,14 +8,14 @@ html {
   letter-spacing: 0.03em;
   /* line-height: 1.3rem; */
 }
-
 body {
+  margin: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, Meiryo, メイリオ, "Noto Sans JP", sans-serif;
   background-color: #a600ff;
   background: repeating-linear-gradient( to top,rgba(255,255,255,0.03) 0px 2px,transparent 2px 4px ),linear-gradient(to bottom,#200933 75%,#3d0b43);
   /* background: repeating-linear-gradient( to top,rgba(255,255,255,0.03) 0px 2px,transparent 2px 4px ),linear-gradient(to bottom,#ff8200 75%,#000000); */
   /* background-size: 20px 2px; */
   background-size: 20px 5px;
-  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "游ゴシック体", "Yu Gothic", YuGothic, Meiryo, メイリオ, "Noto Sans JP", sans-serif;
 }
 img {
   width: 100%;
@@ -533,12 +533,19 @@ storeList
   padding: 5px 10px;
 }
 
+code-p[class] {
+  /* color: white; */
+  color: darkorange;
+  /* text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white; */
+  text-shadow: 0 0 20px darkorange,0 0 35px rgb(255, 168, 61),0 0 5px rgb(255, 168, 61),0 0 50px darkorange;
+}
 code[class] {
   /* color: white; */
   color: darkorange;
   /* text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white; */
   text-shadow: 0 0 20px darkorange,0 0 35px rgb(255, 168, 61),0 0 5px rgb(255, 168, 61),0 0 50px darkorange;
 }
+
 
 @media screen and (min-width: 769px) {
   .storeList li {
