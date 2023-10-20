@@ -95,7 +95,7 @@ span2 {
     position: absolute;
     top: 75%;
     right: 0;
-    left: -30px;
+    left: -40px;
     z-index: -1;
     background-color: #000000;
     visibility: hidden;
@@ -162,7 +162,7 @@ main
 ========================================================= */
 
 main {
-  padding-top: 60px;
+  padding-top: 90px;
   display: block;
   overflow: hidden;
 
@@ -201,6 +201,7 @@ p {
 /* =========================================================
 info
 ========================================================= */
+
 .info {
   padding: 40px 0 20px;
   text-align: center;
@@ -363,7 +364,7 @@ information-data
 
 .information-data .head {
   padding: 10px 0;
-  border-top: 2px solid #000;
+  /* border-top: 2px solid #000; */
   border-bottom: 1px solid #CED1D8;
   font-size: 15px;
   line-height: 1.8;
