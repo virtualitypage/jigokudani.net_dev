@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNOW</title>
+  <link rel="stylesheet" href="style.css"><!-- CSS読み込み -->
+</head>
+<body>
+  <div class="snow-container">
+    <span class="snow" style="width: 12px; height: 12px; left: 489px;"></span>
+  </div>
+
+  <script src="main.js"></script><!-- JS読み込み -->
+</body>
+</html>
+
+<style>
+
+/* 背景を表示させるコンテナ */
+.snow-container {
+  position: relative;
+  overflow: hidden; /* 背景からはみ出した雪を隠す */
+}
+.snow-container img {
+  height: 100vh; /*背景の高さ*/
+  width: 100%; /* 背景の横幅 */
+}
+
+/*雪の色とループ*/
+.snow {
+  position: absolute;
+  background-color: #ff0000; /*色*/
+  border-radius: 50%; /*雪を丸*/
+  animation: animate-snow 20s linear; /*アニメーションでループ*/
+}
+
+/* 画面からの降り始めと画面から消える時の設定 */
+@keyframes animate-snow {
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+  }
+}
+</style>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+  // コンテナを指定
+  const section = document.querySelector('.snow-container');
+
+  // 雪を生成する関数
+  const createSnow = () => {
+    const snowEl = document.createElement('span');
+    snowEl.className = 'snow';
+    const minSize = 5;
+    const maxSize = 15;
+    const size = Math.random() * (maxSize + 1 - minSize) + minSize;
+    snowEl.style.width = `${size}px`;
+    snowEl.style.height = `${size}px`;
+    snowEl.style.left = Math.random() * innerWidth + 'px';
+    section.appendChild(snowEl);
+
+    // 一定時間が経てば雪を消す
+    setTimeout(() => {
+      snowEl.remove();
+    }, 20000);
+
+  }
+
+  // 雪が発生する間隔をミリ秒で指定
+  setInterval(createSnow, 300);
+});
+</script>

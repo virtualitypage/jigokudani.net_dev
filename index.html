@@ -47,6 +47,9 @@
       </div>
     </header>
     <main class="main-contents">
+      <div class="snow-container">
+        <span class="snow" style="width: 12px; height: 12px; left: 489px;"></span>
+      </div>
       <code-p class="cm-s-default2">
         <div class="infoArea">
           <p>阪神野田駅または地下鉄野田阪神駅を出て徒歩5分<br>そこには大阪市福島区吉野の通称<br>「地獄谷」という呑み屋街があります。<br><br>古民家と酒場が共存するこの一角は<br>昭和の雰囲気を色濃く残すレトロな呑み屋街として、<br>今もその姿を現代に語り継いでいます。</p>
@@ -585,3 +588,25 @@
     <script src="./js/main.js"></script>
   </body>
 </html>
+
+<script>
+  // 雪が降るコード
+  window.addEventListener('DOMContentLoaded', () => {
+    const section = document.querySelector('.snow-container'); // コンテナを指定
+    const createSnow = () => { // 雪を生成する関数
+      const snowEl = document.createElement('span');
+      snowEl.className = 'snow';
+      const minSize = 5;
+      const maxSize = 15;
+      const size = Math.random() * (maxSize + 1 - minSize) + minSize;
+      snowEl.style.width = `${size}px`;
+      snowEl.style.height = `${size}px`;
+      snowEl.style.left = Math.random() * innerWidth + 'px';
+      section.appendChild(snowEl);
+      setTimeout(() => { // 一定時間が経てば雪を消す
+        snowEl.remove();
+      }, 20000);
+    }
+    setInterval(createSnow, 300); // 雪が発生する間隔をミリ秒で指定
+  });
+</script>

@@ -179,6 +179,34 @@ main {
 }
 
 /* =========================================================
+animation
+========================================================= */
+
+.snow { /* 雪の色とループ */
+  position: fixed;
+  background-color: #fff; /* 色 */
+  border-radius: 50%; /* 雪の形を丸にする */
+  animation: animate-snow 20s linear; /* アニメーションでループ */
+}
+
+@keyframes animate-snow { /* 画面からの降り始めと画面から消える時の設定 */
+  0% {
+    top: 0;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    top: 100vh;
+  }
+}
+
+/* =========================================================
 infoArea
 ========================================================= */
 
@@ -503,8 +531,8 @@ storeList
   padding: 10px 7px 0;
 }
 .storeList li dl dt {
-  /* color: #fff; */ /* 通常 */
-  color: orange; /* ハロウィン仕様 */
+  color: #fff; /* 通常 */
+  /* color: orange; */ /* ハロウィン仕様 */
   font-size: 20px;
   line-height: 1.6;
   margin-bottom: 3px;
@@ -535,24 +563,24 @@ storeList
 }
 
 /* 通常 */
-/* code-p[class] {
+code-p[class] {
   color: white;
   text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white;
 }
 code[class] {
   color: white;
   text-shadow: 0 0 2px #100c0f,0 0 35px #ffffff44,0 0 5px white,0 0 2px white;
-} */
+}
 
 /* ハロウィン仕様 */
-code-p[class] {
+/* code-p[class] {
   color: rgb(255, 123, 0);
   text-shadow: 0 0 20px rgb(255, 123, 0),0 0 35px rgb(255, 123, 0),0 0 5px rgb(255, 123, 0),0 0 50px darkorange;
 }
 code[class] {
   color: rgb(255, 123, 0);
   text-shadow: 0 0 20px rgb(255, 123, 0),0 0 35px rgb(255, 123, 0),0 0 5px rgb(255, 123, 0),0 0 50px darkorange;
-}
+} */
 
 @media screen and (min-width: 769px) {
   .storeList li {
